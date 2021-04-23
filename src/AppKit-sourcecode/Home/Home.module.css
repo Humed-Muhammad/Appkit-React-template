@@ -1,0 +1,172 @@
+.homeCont {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/hero-1.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 35%;
+}
+.navBar {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  transition: all 0.5s ease;
+}
+.logoCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.span {
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.listCont {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.list {
+  padding: 10px;
+  text-align: center;
+}
+.link {
+  color: rgb(177, 175, 175);
+  transition: color 0.5s ease;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: white;
+}
+.link2:hover {
+  color: gray;
+}
+
+.bodyCont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.leftCont {
+  padding-bottom: 100px;
+  padding-left: 100px;
+  width: 45%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  /* border: 1px solid; */
+  color: white;
+}
+.header {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  width: 90%;
+}
+.para {
+  font-size: 1.5rem;
+}
+.btn {
+  height: 50px !important;
+  width: 200px !important;
+  padding: 5px !important;
+  font-size: 1.2rem !important;
+  background: rgb(84, 185, 224) !important;
+  color: white !important;
+}
+.rightCont {
+  /* position: absolute; */
+  /* top: 18vh;
+  right: 60px; */
+  width: 50%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.toggel {
+  display: none !important;
+  background: rgb(37, 37, 37) !important;
+  font-size: 1.5rem !important;
+  cursor: pointer !important;
+}
+@media (max-width: 1100px) {
+  .listCont {
+    width: 70%;
+  }
+  .link {
+    font-size: 1rem;
+  }
+  .rightCont {
+    padding: 0px;
+    justify-content: center;
+    height: 45%;
+  }
+  .leftCont {
+    width: 50%;
+  }
+  .header {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+  .para {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 767px) {
+  .homeCont {
+    height: 130vh;
+  }
+  .bodyCont {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .leftCont {
+    width: 80%;
+    align-items: center;
+    margin-right: 20px;
+    text-align: left;
+  }
+  .rightCont {
+    justify-content: flex-start;
+  }
+  .toggelable {
+    display: initial !important;
+  }
+  .absolute {
+    display: none;
+    position: absolute;
+    flex-direction: column !important;
+    background: rgba(0, 0, 0, 0.795);
+    top: 55px;
+    width: 100%;
+  }
+  .listed {
+    display: initial;
+  }
+  .link {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 525px) {
+  .leftCont {
+    width: 100%;
+  }
+}
